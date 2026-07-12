@@ -11,8 +11,8 @@ const NavCourse = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/">InsertCorse</a>
-        <a class="nav-link" href="/View">ViewAllCourse</a>
+        <a class="nav-link" href="/">InsertCourse</a>
+        <a class="nav-link" href="/View">ViewAllCourses</a>
       </div>
     </div>
   </div>
