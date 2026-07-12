@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import NavCourse from "./NavCourse";
 
 const ViewAllCourses = () => {
     const[data,changeData]= useState([])
@@ -20,7 +21,7 @@ const ViewAllCourses = () => {
        
     return (
         <div>
-           
+           <NavCourse />
             <div className="container mt-4">
                 <div className="row g-4">
                     {data.map(
