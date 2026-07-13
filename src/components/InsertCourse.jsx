@@ -19,18 +19,17 @@ const inputHandler = (event)=>{
 
   changeInput({...input,[event.target.name]:event.target.value})
 }
- const readValue = () => {
-    console.log(input);
+ const readvalue=()=>{
 
-    axios.post("https://host-demo-app.onrender.com/api/add-course", input)
-        .then((response) => {
-            console.log(response.data);
-        })
-        .catch((error) => {
-            console.log(error.response.data);
-            console.log(error.response.status);
-        });
-}
+ console.log(input)
+ axios.post("https://host-demo-app.onrender.com/api/add-course",input).then(
+
+    (response)=>{
+
+        console.log(response.data)
+    }
+ ).catch() 
+ }
 
     return (
         <div>
