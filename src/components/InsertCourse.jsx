@@ -22,7 +22,7 @@ const inputHandler = (event)=>{
  const readvalue=()=>{
 
  console.log(input)
- axios.post("http://192.168.33.245:5001/api/add-course",input).then(
+ axios.post("https://host-demo-app.onrender.com/api/add-course",input).then(
 
     (response)=>{
 
