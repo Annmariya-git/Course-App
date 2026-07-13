@@ -53,9 +53,9 @@ const inputHandler = (event)=>{
                             <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label htmlFor="" className="form-label">Mode</label>
                                 <select className="form-select" name="mode" value={input.mode} onChange={inputHandler}>
-                                <option value="">Select Mode</option>
-                                <option value="online">Online</option>
-                                <option value="offline">Offline</option>
+                                <option value="Select Mode">Select Mode</option>
+                                <option value="Online">Online</option>
+                                <option value="Offline">Offline</option>
                                 <option value="Hybrid">Hybrid</option>
                                 </select>
 

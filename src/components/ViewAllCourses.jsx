@@ -30,7 +30,7 @@ const ViewAllCourses = () => {
                             <div className="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div className="card h-100 shadow-sm">
                             <div className="card-body">
-                                <h5 className="card-title">Student Registration</h5>
+                                <h5 className="card-title">Course App</h5>
                                 <p><b>Course_name:</b>{value.course_name}</p>
                                 <p><b>Created_at:</b>{value.created_at}</p>
                                 <p><b>Duration:</b>{value.duration}</p>
