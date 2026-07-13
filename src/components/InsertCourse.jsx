@@ -19,17 +19,18 @@ const inputHandler = (event)=>{
 
   changeInput({...input,[event.target.name]:event.target.value})
 }
- const readvalue=()=>{
+ const readValue = () => {
+    console.log(input);
 
- console.log(input)
- axios.post("https://host-demo-app.onrender.com/api/add-course",input).then(
-
-    (response)=>{
-
-        console.log(response.data)
-    }
- ).catch() 
- }
+    axios.post("https://host-demo-app.onrender.com/api/add-course", input)
+        .then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error.response.data);
+            console.log(error.response.status);
+        });
+}
 
     return (
         <div>
@@ -54,8 +55,8 @@ const inputHandler = (event)=>{
                                 <label htmlFor="" className="form-label">Mode</label>
                                 <select className="form-select" name="mode" value={input.mode} onChange={inputHandler}>
                                 <option value="">Select Mode</option>
-                                <option value="online">online</option>
-                                <option value="offline">offline</option>
+                                <option value="online">Online</option>
+                                <option value="offline">Offline</option>
                                 <option value="Hybrid">Hybrid</option>
                                 </select>
 
